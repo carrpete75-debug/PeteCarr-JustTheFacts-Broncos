@@ -3,13 +3,12 @@
   --navy-soft: #173b66;
   --orange: #fb4f14;
   --orange-soft: #fff1eb;
-  --paper: #fb4f14;
-  --page-bg: #fb4f14;
+  --paper: #f7f8fa;
   --white: #ffffff;
   --ink: #172235;
   --muted: #5d6a7c;
   --line: #dbe2ea;
-  --shadow: 0 12px 28px rgba(10, 35, 66, 0.22);
+  --shadow: 0 10px 24px rgba(10, 35, 66, 0.08);
 }
 
 * {
@@ -93,12 +92,7 @@ a:focus-visible {
 }
 
 .hero {
-  background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: 0.8rem;
-  box-shadow: var(--shadow);
   margin-bottom: 1.35rem;
-  padding: 1.15rem 1.25rem 1.25rem;
 }
 
 .kicker {
@@ -297,6 +291,43 @@ h3 {
   margin-right: 0.65rem;
 }
 
+.table-wrap {
+  overflow-x: auto;
+  margin: 0 -0.15rem;
+}
+
+.facts {
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  width: 100%;
+}
+
+.facts th,
+.facts td {
+  border-bottom: 1px solid var(--line);
+  padding: 0.55rem 0.55rem 0.55rem 0;
+  text-align: left;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.facts th {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.facts tr.is-den td {
+  background: var(--orange-soft);
+  font-weight: 650;
+}
+
+.facts tr.is-den td:first-child {
+  box-shadow: inset 3px 0 0 var(--orange);
+}
+
 .schedule {
   list-style: none;
   margin: 0;
@@ -443,15 +474,4 @@ h3 {
   color: var(--navy);
   font-variant-numeric: tabular-nums;
   font-weight: 800;
-}
-
-.lineup-list dt {
-  min-width: 4.5rem;
-  font-variant-numeric: tabular-nums;
-}
-
-.note-inline {
-  color: var(--muted);
-  font-size: 0.85em;
-  font-weight: 500;
 }
