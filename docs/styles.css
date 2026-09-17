@@ -444,3 +444,14 @@ h3 {
   font-variant-numeric: tabular-nums;
   font-weight: 800;
 }
+
+.lineup-list dt {
+  min-width: 4.5rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.note-inline {
+  color: var(--muted);
+  font-size: 0.85em;
+  font-weight: 500;
+}
