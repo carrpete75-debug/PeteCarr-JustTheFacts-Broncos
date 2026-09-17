@@ -27,6 +27,15 @@ body {
   line-height: 1.55;
 }
 
+a {
+  color: var(--navy-soft);
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--orange);
+}
+
 .site-header {
   background: var(--navy);
   border-bottom: 4px solid var(--orange);
@@ -126,9 +135,20 @@ h3 {
   max-width: 42rem;
 }
 
+.pub-meta {
+  color: var(--muted);
+  font-size: 0.86rem;
+  margin: 0.85rem 0 0;
+}
+
+.pub-dot {
+  margin: 0 0.35rem;
+}
+
 .grid {
   display: grid;
   gap: 1rem;
+  align-items: stretch;
 }
 
 .card {
@@ -137,10 +157,40 @@ h3 {
   border-radius: 0.8rem;
   box-shadow: var(--shadow);
   padding: 1.15rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
 }
 
 .card--accent {
   border-top: 5px solid var(--orange);
+}
+
+.card-head {
+  align-items: baseline;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: space-between;
+  margin-bottom: 0.85rem;
+}
+
+.card-head h2 {
+  margin-bottom: 0;
+}
+
+.card-link {
+  color: var(--navy-soft);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.card-link:hover,
+.card-link:focus-visible {
+  color: var(--orange);
+  text-decoration: underline;
 }
 
 .record {
@@ -163,6 +213,23 @@ h3 {
   font-size: 0.78rem;
   font-weight: 800;
   padding: 0.3rem 0.6rem;
+}
+
+.split {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 42rem) {
+  .split {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .split .data-list:last-child {
+    border-left: 1px solid var(--line);
+    padding-left: 1.5rem;
+  }
 }
 
 .data-list {
@@ -211,6 +278,17 @@ h3 {
 .note p:last-child,
 .card p:last-child {
   margin-bottom: 0;
+}
+
+.source-row {
+  color: var(--muted);
+  font-size: 0.78rem;
+  margin: auto 0 0;
+  padding-top: 1rem;
+}
+
+.source-row a {
+  margin-right: 0.65rem;
 }
 
 .schedule {
