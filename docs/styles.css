@@ -298,3 +298,23 @@ h3 {
     grid-column: span 2;
   }
 }
+
+.writeup-kicker {
+  margin: 1.1rem 0 0.55rem;
+  font-size: 0.95rem;
+  color: var(--navy);
+}
+
+.game-writeup p {
+  margin: 0 0 0.75rem;
+  color: var(--ink);
+  font-size: 0.98rem;
+}
+
+.game-writeup p:last-child {
+  margin-bottom: 0;
+}
+
+.card--accent .game-writeup p {
+  color: var(--ink);
+}
