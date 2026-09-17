@@ -93,7 +93,12 @@ a:focus-visible {
 }
 
 .hero {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+  box-shadow: var(--shadow);
   margin-bottom: 1.35rem;
+  padding: 1.15rem 1.25rem 1.25rem;
 }
 
 .kicker {
@@ -130,14 +135,14 @@ h3 {
 }
 
 .deck {
-  color: var(--navy);
+  color: var(--muted);
   font-size: 1.05rem;
   margin: 0;
   max-width: 42rem;
 }
 
 .pub-meta {
-  color: rgba(10, 35, 66, 0.82);
+  color: var(--muted);
   font-size: 0.86rem;
   margin: 0.85rem 0 0;
 }
