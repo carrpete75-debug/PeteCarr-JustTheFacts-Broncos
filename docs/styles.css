@@ -3,12 +3,13 @@
   --navy-soft: #173b66;
   --orange: #fb4f14;
   --orange-soft: #fff1eb;
-  --paper: #f7f8fa;
+  --paper: #fb4f14;
+  --page-bg: #fb4f14;
   --white: #ffffff;
   --ink: #172235;
   --muted: #5d6a7c;
   --line: #dbe2ea;
-  --shadow: 0 10px 24px rgba(10, 35, 66, 0.08);
+  --shadow: 0 12px 28px rgba(10, 35, 66, 0.22);
 }
 
 * {
@@ -129,14 +130,14 @@ h3 {
 }
 
 .deck {
-  color: var(--muted);
+  color: var(--navy);
   font-size: 1.05rem;
   margin: 0;
   max-width: 42rem;
 }
 
 .pub-meta {
-  color: var(--muted);
+  color: rgba(10, 35, 66, 0.82);
   font-size: 0.86rem;
   margin: 0.85rem 0 0;
 }
