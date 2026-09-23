@@ -55,7 +55,7 @@ a:focus-visible {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 3.1rem;
+  max-height: 2.75rem;
   object-fit: cover;
   object-position: left center;
 }
