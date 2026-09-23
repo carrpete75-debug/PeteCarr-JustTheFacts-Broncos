@@ -171,9 +171,10 @@ a:focus-visible {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-  width: min(100% - 1.25rem, 90rem);
-  margin: 0 auto;
-  padding: 0.75rem 0.5rem 0;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0.75rem 1rem 0 0.4rem;
   box-sizing: border-box;
 }
 
@@ -636,8 +637,10 @@ h3 {
 
   .page-shell {
     flex-direction: column;
-    width: min(100% - 1rem, 90rem);
+    width: 100%;
     gap: 0.75rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .afcwest-rail {
