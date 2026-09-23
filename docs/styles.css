@@ -155,25 +155,25 @@ a:focus-visible {
 .afcwest-standings {
   background: var(--white);
   border: 1px solid rgba(10, 35, 66, 0.12);
-  border-radius: 0.7rem;
+  border-radius: 0.55rem;
   box-shadow: var(--shadow);
   color: var(--ink);
-  font-size: 1.44rem;
+  font-size: 0.72rem;
   line-height: 1.25;
   margin: 0;
-  max-width: 23rem;
-  padding: 1.1rem 1.3rem 1rem;
+  max-width: 11.5rem;
+  padding: 0.55rem 0.65rem 0.5rem;
 }
 
 .afcwest-standings__title {
   display: inline-block;
   color: var(--navy);
-  font-size: 1.36rem;
+  font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-decoration: none;
   text-transform: uppercase;
-  margin: 0 0 0.55rem;
+  margin: 0 0 0.28rem;
 }
 
 .afcwest-standings__title:hover,
@@ -190,7 +190,7 @@ a:focus-visible {
 .afcwest-standings__table th,
 .afcwest-standings__table td {
   border-bottom: 1px solid var(--line);
-  padding: 0.24rem 0.7rem 0.24rem 0;
+  padding: 0.12rem 0.35rem 0.12rem 0;
   text-align: left;
   white-space: nowrap;
   vertical-align: baseline;
@@ -202,12 +202,12 @@ a:focus-visible {
 .afcwest-standings__table td:nth-child(2) {
   text-align: right;
   padding-right: 0;
-  padding-left: 0.9rem;
+  padding-left: 0.45rem;
 }
 
 .afcwest-standings__table th {
   color: var(--muted);
-  font-size: 1.24rem;
+  font-size: 0.62rem;
   font-weight: 800;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -221,8 +221,8 @@ a:focus-visible {
 }
 
 .afcwest-standings__table tr.is-den td:first-child {
-  box-shadow: inset 4px 0 0 var(--orange);
-  padding-left: 0.7rem;
+  box-shadow: inset 2px 0 0 var(--orange);
+  padding-left: 0.35rem;
 }
 
 .afcwest-standings__table tbody tr:last-child td {
@@ -608,7 +608,7 @@ h3 {
   }
 
   .afcwest-standings {
-    max-width: 24rem;
+    max-width: 12rem;
   }
 
   .header-inner--main {
