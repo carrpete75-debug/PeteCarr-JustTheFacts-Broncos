@@ -55,8 +55,9 @@ a:focus-visible {
 .broncos-banner__inner {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 1.1rem 1rem 1.2rem;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.55rem 1rem 0.6rem;
   width: min(100%, 72rem);
   margin: 0 auto;
   box-sizing: border-box;
@@ -66,13 +67,12 @@ a:focus-visible {
 
 .broncos-banner__titles {
   min-width: 0;
-  text-align: center;
 }
 
 .broncos-banner__team {
   margin: 0;
   color: var(--white);
-  font-size: clamp(2.3rem, 6.4vw, 3.3rem);
+  font-size: clamp(1.15rem, 3.2vw, 1.65rem);
   font-weight: 800;
   letter-spacing: 0.06em;
   line-height: 1.05;
@@ -81,9 +81,9 @@ a:focus-visible {
 
 .broncos-banner__rule {
   display: block;
-  width: min(100%, 22rem);
-  height: 4px;
-  margin: 0.55rem auto 0.45rem;
+  width: min(100%, 14rem);
+  height: 3px;
+  margin: 0.28rem 0 0.22rem;
   background: var(--orange);
   border: 0;
 }
@@ -91,40 +91,29 @@ a:focus-visible {
 .broncos-banner__site {
   margin: 0;
   color: #e8eef6;
-  font-size: clamp(1.1rem, 2.4vw, 1.45rem);
+  font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.14em;
   line-height: 1.2;
   text-transform: uppercase;
 }
 
-/* Corner accents — decorative, don't shift the centered wordmark */
 .broncos-banner__accent {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 3.5rem;
-  height: 3.5rem;
-  background: linear-gradient(225deg, var(--orange) 0 38%, #d94312 38% 48%, transparent 48%);
+  flex: 0 0 auto;
+  width: 2.75rem;
+  height: 2.75rem;
+  background: linear-gradient(135deg, transparent 48%, #d94312 48%, #d94312 62%, var(--orange) 62%);
   opacity: 0.95;
-  pointer-events: none;
-}
-
-.broncos-banner__accent--left {
-  right: auto;
-  left: 0;
-  background: linear-gradient(135deg, var(--orange) 0 38%, #d94312 38% 48%, transparent 48%);
 }
 
 @media (max-width: 41.99rem) {
   .broncos-banner__inner {
-    padding: 0.9rem 0.75rem 1rem;
+    padding: 0.45rem 0.75rem 0.5rem;
   }
 
-  .broncos-banner__accent,
-  .broncos-banner__accent--left {
-    width: 2.4rem;
-    height: 2.4rem;
+  .broncos-banner__accent {
+    width: 1.85rem;
+    height: 1.85rem;
   }
 }
 
