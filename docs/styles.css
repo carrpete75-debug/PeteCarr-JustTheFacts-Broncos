@@ -42,6 +42,22 @@ a:focus-visible {
   color: var(--white);
 }
 
+.broncos-banner {
+  display: block;
+  width: 100%;
+  line-height: 0;
+  background: var(--navy);
+  overflow: hidden;
+}
+
+.broncos-banner img {
+  display: block;
+  width: 100%;
+  height: clamp(5.5rem, 14vw, 9.5rem);
+  object-fit: cover;
+  object-position: left center;
+}
+
 .main,
 .footer-inner {
   width: min(100% - 2rem, 72rem);
@@ -55,6 +71,7 @@ a:focus-visible {
   padding: 0.85rem 1rem;
   width: 100%;
   box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .header-inner--main {
