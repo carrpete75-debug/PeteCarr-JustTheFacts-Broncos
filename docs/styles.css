@@ -50,15 +50,15 @@ a:focus-visible {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   overflow: hidden;
   position: relative;
+  text-align: center;
 }
 
 .broncos-banner__inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
   padding: 0.55rem 1rem 0.6rem;
-  width: min(100%, 72rem);
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   box-sizing: border-box;
   position: relative;
   z-index: 1;
@@ -66,6 +66,9 @@ a:focus-visible {
 
 .broncos-banner__titles {
   min-width: 0;
+  width: max-content;
+  max-width: calc(100% - 2rem);
+  margin-inline: auto;
   text-align: center;
 }
 
