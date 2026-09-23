@@ -52,7 +52,7 @@ a:focus-visible {
   align-items: flex-start;
   display: flex;
   gap: 1rem 1.25rem;
-  padding: 0.85rem 1rem 0.85rem 0.4rem;
+  padding: 0.85rem 1rem;
   width: 100%;
   box-sizing: border-box;
 }
@@ -65,22 +65,33 @@ a:focus-visible {
   gap: 0.75rem 1rem;
   justify-content: space-between;
   min-width: 0;
-  padding: 0.15rem 0 0;
+  width: min(100%, 72rem);
+  margin: 0 auto;
+}
+
+/* Far-left standings on the orange page background (below navy header) */
+.afcwest-rail {
+  width: 100%;
+  padding: 0.75rem 0.4rem 0;
+  box-sizing: border-box;
 }
 
 .afcwest-standings {
-  flex: 0 0 auto;
-  color: #e8eef6;
+  background: var(--white);
+  border: 1px solid rgba(10, 35, 66, 0.12);
+  border-radius: 0.55rem;
+  box-shadow: var(--shadow);
+  color: var(--ink);
   font-size: 0.72rem;
   line-height: 1.25;
   margin: 0;
   max-width: 11.5rem;
-  order: -1;
+  padding: 0.55rem 0.65rem 0.5rem;
 }
 
 .afcwest-standings__title {
   display: inline-block;
-  color: #ffffff;
+  color: var(--navy);
   font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -97,12 +108,12 @@ a:focus-visible {
 .afcwest-standings__table {
   border-collapse: collapse;
   width: 100%;
-  color: #d7e2ef;
+  color: var(--ink);
 }
 
 .afcwest-standings__table th,
 .afcwest-standings__table td {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  border-bottom: 1px solid var(--line);
   padding: 0.12rem 0.35rem 0.12rem 0;
   text-align: left;
   white-space: nowrap;
@@ -119,18 +130,18 @@ a:focus-visible {
 }
 
 .afcwest-standings__table th {
-  color: #9fb3c9;
+  color: var(--muted);
   font-size: 0.62rem;
   font-weight: 800;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  border-bottom-color: rgba(255, 255, 255, 0.28);
+  border-bottom-color: #c5ced9;
 }
 
 .afcwest-standings__table tr.is-den td {
-  color: #ffffff;
+  color: var(--navy);
   font-weight: 700;
-  background: rgba(251, 79, 20, 0.22);
+  background: var(--orange-soft);
 }
 
 .afcwest-standings__table tr.is-den td:first-child {
@@ -514,11 +525,13 @@ h3 {
 @media (max-width: 41.99rem) {
   .header-bar {
     flex-wrap: wrap;
+  }
+
+  .afcwest-rail {
     padding-left: 0.5rem;
   }
 
   .afcwest-standings {
-    order: -1;
     max-width: 12rem;
   }
 
