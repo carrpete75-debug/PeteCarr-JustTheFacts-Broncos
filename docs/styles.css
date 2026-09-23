@@ -9,8 +9,9 @@
   --muted: #5d6a7c;
   --line: #dbe2ea;
   --shadow: 0 10px 24px rgba(10, 35, 66, 0.08);
-  /* Brand/"Just the Facts" line; top banner is 4× this */
   --brand-line: clamp(1.35rem, 4vw, 1.85rem);
+  /* Compact "Just the Facts" line; top navy banner is exactly 4× this */
+  --jtf-line: 0.82rem;
 }
 
 * {
@@ -55,8 +56,8 @@ a:focus-visible {
 .broncos-banner img {
   display: block;
   width: 100%;
-  /* Exactly 4× the "Just the Facts" brand line height */
-  height: calc(var(--brand-line) * 4);
+  /* Exactly 4× the "Just the Facts" line (tagline scale) */
+  height: calc(var(--jtf-line) * 4);
   object-fit: cover;
   object-position: left 42%;
 }
