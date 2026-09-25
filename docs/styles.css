@@ -264,6 +264,27 @@ a:focus-visible {
   border-bottom: 0;
 }
 
+/* AFC West odds tile: same tile as standings, stacked below it */
+.afcwest-standings--odds {
+  margin-top: 0.75rem;
+}
+
+.afcwest-standings--odds abbr {
+  text-decoration: none;
+  cursor: help;
+}
+
+.afcwest-standings__source {
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.35;
+  margin: 0.5rem 0 0;
+}
+
+.afcwest-standings__source a {
+  color: var(--navy-soft);
+}
+
 
 .brand {
   color: var(--white);

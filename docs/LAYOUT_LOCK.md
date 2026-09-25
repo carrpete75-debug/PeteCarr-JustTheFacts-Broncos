@@ -7,3 +7,5 @@ Do not redesign without an explicit user request.
 3. **Chrome** — orange page `#fb4f14`, white tiles, navy header.
 
 Content updates only on daily runs unless fixing a real bug.
+
+4. **AFC West odds tile** — directly under the standings tile in `.afcwest-rail` (added 2026-09-24): `aside.afcwest-standings.afcwest-standings--odds`, same width/style as standings, 0.75rem gap; Team / Div / SB American odds (Broncos row `is-den`), muted source line.
