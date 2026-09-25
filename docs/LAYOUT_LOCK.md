@@ -9,3 +9,4 @@ Do not redesign without an explicit user request.
 Content updates only on daily runs unless fixing a real bug.
 
 4. **AFC West odds tile** — directly under the standings tile in `.afcwest-rail` (added 2026-09-24): `aside.afcwest-standings.afcwest-standings--odds`, same width/style as standings, 0.75rem gap; Team / Div / SB American odds (Broncos row `is-den`), muted source line.
+5. **Body AFC West card removed** (2026-09-24) — the rail standings tile is the only standings display; its title and a small "Full NFL standings" source line both link to https://www.nfl.com/standings/division/2026/REG (new tab). Upcoming card now spans 2 columns so the grid has no empty cell.
